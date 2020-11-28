@@ -20,6 +20,10 @@ function draw() {
     vehicle.update();
     vehicle.show();
   });
+  
+  textAlign(CENTER, CENTER);
+  fill(255);
+  text('Hover your mouse over the numbers!', parseInt(windowWidth / 2), windowHeight - 50);
 }
 
 function padTime(n) {
