@@ -8,7 +8,6 @@ class SquareVehicle extends Vehicle {
     super.update();
     let m = super.steer(this.target, 100, 1).mag();
     this.angle += map(m, 0, this.constraints.maxForce, 0, 0.4);
-    // console.log(this.angle);
   }
 
   show() {

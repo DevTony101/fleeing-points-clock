@@ -18,7 +18,6 @@ class Vehicle {
 
   addSteerBehavior() {
     let steer = this.steer(this.target, 100, 1);
-    //steer.mult(2);
     this.applyForce(steer);
   }
 
