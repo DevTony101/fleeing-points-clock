@@ -12,6 +12,12 @@ function setup() {
   setInterval(updateTime, 3000);
 }
 
+function keyPressed() {
+  if (keyCode === ENTER) {
+    vehicles.forEach(vehicle => vehicle.randomizeColors());
+  }
+}
+
 function draw() {
   background(0);
   vehicles.forEach(vehicle => {
@@ -20,7 +26,7 @@ function draw() {
     vehicle.update();
     vehicle.show();
   });
-  
+
   textAlign(CENTER, CENTER);
   fill(255);
   text('Hover your mouse over the numbers!', parseInt(windowWidth / 2), windowHeight - 50);

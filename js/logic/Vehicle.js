@@ -16,6 +16,10 @@ class Vehicle {
     this.target.set(x, y);
   }
 
+  randomizeColors() {
+    this.clr = color(random(255), random(255), random(255));
+  }
+
   addSteerBehavior() {
     let steer = this.steer(this.target, 100, 1);
     this.applyForce(steer);
