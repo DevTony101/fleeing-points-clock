@@ -7,7 +7,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(940, 360);
+  createCanvas(windowWidth, windowHeight);
+  updateTime();
   setInterval(updateTime, 3000);
 }
 
@@ -28,7 +29,7 @@ function padTime(n) {
 function updateTime() {
   let time = `${hour()}:${padTime(minute())}:${padTime(second())}`;
   let previousLength = textPoints ? textPoints.length : -1;
-  textPoints = customFont.textToPoints(time, 10, 230, 210);
+  textPoints = customFont.textToPoints(time, 10, parseInt(windowHeight / 2) + 100, 310);
   if (previousLength != -1) {
     if (textPoints.length > previousLength) {
       let diff = textPoints.length - previousLength;

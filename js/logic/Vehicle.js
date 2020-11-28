@@ -1,6 +1,6 @@
 class Vehicle {
   constructor() {
-    this.loc = createVector(random(width), random(height));
+    this.loc = createVector(random(windowWidth), random(windowHeight));
     this.target = createVector();
     this.vel = createVector();
     this.acc = createVector();
@@ -22,7 +22,7 @@ class Vehicle {
   }
 
   addFleeBehavior(target) {
-    let flee = this.flee(target, 80, -1);
+    let flee = this.flee(target, 100, -1);
     if (flee) {
       flee.mult(5);
       this.applyForce(flee);
