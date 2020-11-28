@@ -1,7 +1,7 @@
 # fleeing-points-clock
 
 An interactive clock made of steering vehicles! Watch the time pass as you see these little squares re-arrenge themselves to display the current time! Hover your mouse over
-the numbers if you want to see some magic happen. The site is live [here](https://devtony101.github.io/fleeing-points-clock/index).
+the numbers if you want to see some magic happen. The site is live [here](https://devtony101.github.io/fleeing-points-clock/).
 
 <p align="center">
   <img src="https://github.com/DevTony101/fleeing-points-clock/blob/main/data/gif_1.gif" />
