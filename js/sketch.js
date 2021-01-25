@@ -37,7 +37,7 @@ function padTime(n) {
 }
 
 function updateTime() {
-  let time = `${hour()}:${padTime(minute())}:${padTime(second())}`;
+  let time = `${padTime(hour())}:${padTime(minute())}:${padTime(second())}`;
   let previousLength = textPoints ? textPoints.length : -1;
   textPoints = customFont.textToPoints(time, 10, parseInt(windowHeight / 2) + 100, 310);
   if (previousLength != -1) {
